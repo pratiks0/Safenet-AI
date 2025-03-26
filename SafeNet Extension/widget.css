@@ -1,0 +1,76 @@
+#toxic-widget-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999999;
+  font-family: Arial, sans-serif;
+}
+
+#toxic-toggle-button {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+#toggle-btn {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Panel Styles */
+#toxic-panel {
+  width: 300px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#toxic-panel-header {
+  background: #0073e6;
+  color: white;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#toxic-panel-body {
+  padding: 10px;
+}
+
+#input-type-selector {
+  margin-bottom: 10px;
+}
+
+#input-type-selector label {
+  margin-right: 10px;
+}
+
+#toxic-text-input,
+#toxic-image-input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#toxic-text-input {
+  height: 60px;
+}
+
+#toxic-submit {
+  width: 100%;
+  padding: 8px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#toxic-result {
+  margin-top: 10px;
+  font-weight: bold;
+}

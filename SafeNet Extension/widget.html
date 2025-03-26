@@ -1,0 +1,28 @@
+<div id="toxic-widget-container">
+  <div id="toxic-toggle-button">
+    <button id="toggle-btn">Open Classifier</button>
+  </div>
+  <div id="toxic-panel" style="display: none;">
+    <div id="toxic-panel-header">
+      <span>Toxicity Classifier</span>
+      <button id="close-panel">X</button>
+    </div>
+    <div id="toxic-panel-body">
+      <!-- Input Type Selector -->
+      <div id="input-type-selector">
+         <label><input type="radio" name="inputType" value="text" checked> Text</label>
+         <label><input type="radio" name="inputType" value="image"> Image</label>
+      </div>
+      <!-- Text Input Section -->
+      <div id="text-input-section">
+         <textarea id="toxic-text-input" placeholder="Enter text..."></textarea>
+      </div>
+      <!-- Image Input Section -->
+      <div id="image-input-section" style="display: none;">
+         <input type="file" id="toxic-image-input" accept="image/*">
+      </div>
+      <button id="toxic-submit">Classify</button>
+      <div id="toxic-result"></div>
+    </div>
+  </div>
+</div>

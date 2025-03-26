@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Toxicity Classifier",
+    "version": "1.0",
+    "description": "A toggleable floating widget for text classification.",
+    "permissions": ["activeTab", "storage", "scripting"],
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["widget.css"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["widget.html", "widget.js"], 
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  
